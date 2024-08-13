@@ -1,0 +1,215 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: #E4E4E4;
+}
+
+.navbar {
+  box-shadow: 0 5px 10px 0 grey;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.li-active {
+  color: #767676;
+  text-decoration: none;
+}
+
+/* link hover*/
+.active,
+.active:hover {
+  color: rgb(49, 49, 117);
+  transition: all 0.2s ease;
+}
+
+/* For the Pointer Style */
+.pointer {
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.seperator {
+  position: relative;
+  background-color: #E4E4E4;
+  margin-top: 30px;
+  height: 20px;
+  width: 100%;
+}
+
+
+.generate-btn {
+  color: white;
+  background-color: #434EA0;
+  width: 100%;
+}
+
+.generate-btn:hover {
+  color: white;
+  background-color: #25318E;
+  width: 100%;
+}
+
+.set-cus-detials {
+  color: white;
+  background-color: #434EA0;
+  width: 100%;
+}
+
+.set-cus-detials:hover {
+  color: white;
+  background-color: #25318E;
+  width: 100%;
+}
+
+.thd {
+  color: #767676;
+  background: rgb(247, 247, 247);
+}
+
+.fa-lg {
+  font-size: 30px; 
+  margin-bottom: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mr-20px {
+  margin-right: 20px;
+}
+
+.ml-20px {
+  margin-left: 20px;
+}
+
+.span-label {
+  font-size: 12px;
+}
+
+
+.search-divs {
+  color: #434EA0; 
+  border-color: #434EA0;
+}
+
+
+.custom-pdf,
+.custom-excel,
+.custom-csv {
+  margin-bottom: 40px !important;
+}
+
+
+#link_supp,
+#link_dtr,
+#link_po,
+#link_logout,
+#link_vass,
+#link_acc,
+#link_rprt,
+#link_back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Media query for Android devices */
+@media screen and (max-width: 480px) {
+  .navbar-nav.flex-column a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+  .dt-buttons{
+    padding-right: 80px !important;
+  }
+  .dataTables_length {
+    margin-top: 40px;
+  }
+  #dtr_report_filter {
+    margin-right: 0px !important;
+  }
+  #po_monitoring_Data_filter {
+  margin-right: 0px !important;
+  }
+
+  #pending_Data_filter {
+    margin-right: 0px !important;
+  }
+
+  #another_canvass_filter {
+    margin-right: 0px !important;
+  }
+
+  .btn-link {
+    margin-left: 50px !important;
+  }
+}
+
+.dt-buttons{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  margin-bottom: -40px;
+}
+
+#dtr_report_filter {
+  margin-right: 200px;
+}
+
+#po_monitoring_Data_filter {
+  margin-right: 200px;
+}
+
+#pending_Data_filter {
+  margin-right: 200px;
+}
+
+#another_canvass_filter {
+  margin-right: 150px;
+}
+
+#canvass_rprt_filter {
+  margin-right: 150px;
+}
+
+
+
+/* For WebKit-based browsers */
+#canvass-item-breakdown::-webkit-scrollbar {
+  width: 10px; /* width of the scrollbar */
+}
+
+#canvass-item-breakdown::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* background color of the scrollbar track */
+}
+
+#canvass-item-breakdown::-webkit-scrollbar-thumb {
+  background-color: #434EA0; /* color of the scrollbar thumb */
+  border-radius: 5px; /* border radius of the scrollbar thumb */
+}
+
+#canvass-item-breakdown::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* color of the scrollbar thumb on hover */
+}
